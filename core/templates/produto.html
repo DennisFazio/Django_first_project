@@ -1,13 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Produto</title>
+    <link rel='Stylesheet' href="{% static 'css/estilos.css' %}" >
 </head>
 <body>
+<center>
 <h1>Detalhes do Produto {{  produto.nome  }}</h1>
 <a href="{% url 'index' %}">Voltar para Lista de Produtos</a>
-</body>
 <table>
     <thead>
         <tr>
@@ -24,5 +26,6 @@
         </tr>
     </tbody>
     </table>
+    </center>
 </body>
 </html>
